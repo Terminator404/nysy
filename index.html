@@ -75,11 +75,13 @@
             width: 1200px;
             position: relative
         }
+
+        .MC .w-main{width: 100%}
     </style>
 </head>
 <body>
 <header>
-    <div class="yj-top">
+    <div class="yj-top mc-hide">
         <div class="w-main f-bc f-cb ">
             <div class="yj-top-l">
                 <i class="yj-top-icon">&#xe601;</i>
@@ -93,107 +95,363 @@
                 <a class="yj-top-bdr" href="#">联系我们</a>
                 <a href="#">English Version</a>
             </div>
-            <div class="yj-middle">
+        </div>
+    </div>
 
-                <div class="yj-logo">
-                    <img src="img/logo.jpg" alt=""/>
+    <div class="w-main f-cb f-bc">
+        <div class="yj-middle">
+            <div class="yj-logo">
+                <a href="#"><img src="img/logo.jpg" alt=""/></a>
+            </div>
+            <div class="yj-search">
+                <div class="yj-search-box">
+                    <input type="text"/>
+                    <button class="f-btn">搜索</button>
                 </div>
-                <div class="yj-search">
-                    <div class="yj-search-box">
-                        <input type="text"/>
-                        <button class="f-btn">搜索</button>
-                    </div>
-                    <div class="yj-search-hot">
-                        <p class="f-f14">热门搜索：</p>
-                        <a href="#" class="f-f14">肿瘤</a>
-                        <a href="#" class="f-f14">中风</a>
-                        <a href="#" class="f-f14">肝炎</a>
-                        <a href="#" class="f-f14">疼痛</a>
-                        <a href="#" class="f-f14">出血</a>
-                    </div>
+                <div class="yj-search-hot">
+                    <p class="f-f14">热门搜索：</p>
+                    <a href="#" class="f-f14">肿瘤</a>
+                    <a href="#" class="f-f14">中风</a>
+                    <a href="#" class="f-f14">肝炎</a>
+                    <a href="#" class="f-f14">疼痛</a>
+                    <a href="#" class="f-f14">出血</a>
                 </div>
-
             </div>
         </div>
     </div>
 </header>
 
-<div class="yj-nav">
+<div class="yj-nav mc-hide">
     <div class="w-main f-bc f-cb">
-<ul class="yj-nav-box">
-    <li> <a href="#">医院首页</a></li>
-    <li> <a href="#">医院概况</a></li>
-    <li> <a href="#">新闻公告</a></li>
-    <li> <a href="#">医疗服务</a></li>
-    <li> <a href="#">学科人才</a></li>
-    <li> <a href="#">护理园地</a></li>
-    <li> <a href="#">党群人事</a></li>
-</ul>
+        <ul class="yj-nav-box">
+            <a href="#">
+                <li> 医院首页</li>
+            </a>
+            <a href="#">
+                <li> 医院概况</li>
+            </a>
+            <a href="#">
+                <li> 新闻公告</li>
+            </a>
+            <a href="#">
+                <li> 医疗服务</li>
+            </a>
+            <a href="#">
+                <li> 学科人才</li>
+            </a>
+            <a href="#">
+                <li> 护理园地</li>
+            </a>
+            <a href="#">
+                <li> 党群人事</li>
+            </a>
+        </ul>
     </div>
 </div>
 
-<div class="yj-pic-roll">
-    <div class="mj-slideFull">
+<div class="yj-pic-roll mc-hide">
+    <div class="mj-slideFull ">
         <div class="hd">
-            <ul><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li></ul>
+            <ul>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+            </ul>
         </div>
         <div class="bd">
             <ul>
-                <li><a href="#" target="_blank" class="mj-slideFull-img" style="background-image:url(http://www.superslide2.com/otherDemo/2.22/images/1.jpg) ;">&nbsp;</a></li>
-                <li><a href="#" target="_blank" class="mj-slideFull-img" style="background-image:url(http://www.superslide2.com/otherDemo/2.22/images/2.jpg) ;">&nbsp;</a></li>
-                <li><a href="#" target="_blank" class="mj-slideFull-img" style="background-image:url(http://www.superslide2.com/otherDemo/2.22/images/3.jpg);">&nbsp;</a></li>
+                <li><a href="#" target="_blank" class="mj-slideFull-img"
+                       style="background-image:url(img/1.jpg) ;">&nbsp;</a>
+                </li>
+                <li><a href="#" target="_blank" class="mj-slideFull-img"
+                       style="background-image:url(http://www.superslide2.com/otherDemo/2.22/images/2.jpg) ;">&nbsp;</a>
+                </li>
+                <li><a href="#" target="_blank" class="mj-slideFull-img"
+                       style="background-image:url(http://www.superslide2.com/otherDemo/2.22/images/3.jpg);">&nbsp;</a>
+                </li>
             </ul>
         </div>
     </div>
     <script id="jsID" type="text/javascript">
-        $(function(){
-            var slide=$(".mj-slideFull");
-            var resizeBox=$(".bd ul",slide).add('.bd ul li',slide);
-            $(window).resize(function(){resizeBox.width($(".mj-slideFull").width())});
-            slide.slide({mainCell:".bd ul",effect:"fold",autoPlay:true});
+        $(function () {
+            var slide = $(".mj-slideFull");
+            var resizeBox = $(".bd ul", slide).add('.bd ul li', slide);
+            $(window).resize(function () {
+                resizeBox.width($(".mj-slideFull").width())
+            });
+            slide.slide({mainCell: ".bd ul", effect: "fold", autoPlay: true});
         })
     </script>
 </div>
 
 <ul class="yj-guide">
-    <div class="w-main f-p15 f-bc f-cb">
-        <a href="#" target="_blank"> <li class="yj-guide-box cbl">
-            <i class="yj-guide-icon">&#xe606;</i>
-            <p>预约挂号</p>
-        </li>
+    <div class="w-main f-bc f-cb">
+        <a href="#" target="_blank">
+            <li class="yj-guide-box cbl g-mw33">
+                <i class="yj-guide-icon">&#xe606;</i>
+
+                <p>预约挂号</p>
+            </li>
         </a>
         <a href="#" target="_blank">
-        <li class="yj-guide-box cye">
-            <i class="yj-guide-icon">&#xe607;</i>
-            <p>出诊专家</p>
-        </li>
+            <li class="yj-guide-box cye g-mw33">
+                <i class="yj-guide-icon">&#xe607;</i>
+
+                <p>出诊专家</p>
+            </li>
         </a>
         <a href="#" target="_blank">
-        <li class="yj-guide-box cgr">
-            <i class="yj-guide-icon">&#xe600;</i>
-            <p>医疗特色</p>
-        </li>
+            <li class="yj-guide-box cgr g-mw33">
+                <i class="yj-guide-icon">&#xe600;</i>
+
+                <p>医疗特色</p>
+            </li>
         </a>
         <a href="#" target="_blank">
-        <li class="yj-guide-box cpu">
-            <i class="yj-guide-icon">&#xe605;</i>
-            <p>就医导航</p>
-        </li>
+            <li class="yj-guide-box cpu g-mw33">
+                <i class="yj-guide-icon">&#xe605;</i>
+
+                <p>就医导航</p>
+            </li>
         </a>
         <a href="#" target="_blank">
-        <li class="yj-guide-box cre">
-            <i class="yj-guide-icon">&#xe603;</i>
-            <p>在线查询</p>
-        </li>
+            <li class="yj-guide-box cre g-mw33">
+                <i class="yj-guide-icon">&#xe603;</i>
+
+                <p>在线查询</p>
+            </li>
         </a>
         <a href="#" target="_blank">
-        <li class="yj-guide-box cbr">
-            <i class="yj-guide-icon">&#xe602;</i>
-            <p>医保服务</p>
-        </li>
-            </a>
+            <li class="yj-guide-box cbr g-mw33">
+                <i class="yj-guide-icon">&#xe602;</i>
+                <p>医保服务</p>
+            </li>
+        </a>
     </div>
 </ul>
+
+<div class="yj-container">
+    <div class="w-main f-bc f-cb">
+
+        <div class="g-w70 g-mw f-fl">
+            <div class="yj-container-left">
+                <div class="g-w55 f-fl mc-hide">
+                    <div class="mj-slideBox">
+                        <div class="hd">
+                            <ul>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" class="mj-slideBox-img"
+                                       style="background:url(img/a1.jpg) center center no-repeat;">
+                                        <p class="mj-slideBox-p">护理部举办项目</p>
+                                    </a></li>
+                                <li><a href="#" target="_blank" class="mj-slideBox-img"
+                                       style="background:url(img/a2.jpg) center center no-repeat;">
+                                    <p class="mj-slideBox-p">医院揭牌运营</p></a></li>
+                                <li><a href="#" target="_blank" class="mj-slideBox-img"
+                                       style="background:url(img/a3.jpg) center center no-repeat;">
+                                    <p class="mj-slideBox-p">医院揭牌运营</p>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <script id="jsID2" type="text/javascript">
+                        $(".mj-slideBox").slide({mainCell: ".bd ul", effect: "fold", autoPlay: true});
+                    </script>
+                </div>
+
+                <div class="g-w45 g-mw f-fl">
+                    <div class="yj-container-box">
+                        <div class="yj-container-before-title">
+                            <p class="yj-container-title">医院新闻</p>
+                        </div>
+                        <a class="more f-fr" href="#">更多</a>
+                        <ul class="yj-container-txt">
+                            <li><a href="#" target="_blank">南医三院郑美贞应邀参加学校临床护理带教经验分享会</a></li>
+                            <li><a href="#" target="_blank">南医三院妇产科采用腹腔镜下淋巴显影技术</a></li>
+                            <li><a href="#" target="_blank">南医三院伤口造口门诊正式开诊</a></li>
+                            <li><a href="#" target="_blank">南医三院举办第四届教职工羽毛球团体赛</a></li>
+                            <li><a href="#" target="_blank">护理部举办项目改善专题培训</a></li>
+                            <li><a href="#" target="_blank">南医三院关节外科举办肩关节镜基础培训班</a></li>
+                            <li><a href="#" target="_blank">南医三院粤东医院揭牌运营</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="g-w30 g-mw f-fr">
+            <div class="yj-container-right">
+                <div class="yj-container-box">
+                    <div class="yj-container-before-title">
+                        <p class="yj-container-title">公告</p>
+                    </div>
+                    <a class="more f-fr" href="#">更多</a>
+                    <ul class="yj-container-txt">
+                        <li><a href="#" target="_blank">南医三院郑美贞应邀参加学校临床护理带教经验分享会</a></li>
+                        <li><a href="#" target="_blank">南医三院妇产科采用腹腔镜下淋巴显影技术</a></li>
+                        <li><a href="#" target="_blank">南医三院伤口造口门诊正式开诊</a></li>
+                        <li><a href="#" target="_blank">南医三院举办第四届教职工羽毛球团体赛</a></li>
+                        <li><a href="#" target="_blank">护理部举办项目改善专题培训</a></li>
+                        <li><a href="#" target="_blank">南医三院关节外科举办肩关节镜基础培训班</a></li>
+                        <li><a href="#" target="_blank">南医三院粤东医院揭牌运营</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="g-w70 g-mw f-fl">
+            <div class="yj-container-box2">
+                <div class="yj-container-title-box">
+                    <div class="yj-container-before-title">
+                        <p class="yj-container-title">科室导航</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="yj-map">
+                <div class="yj-map-box">
+                    <div class="yj-map-left">
+                        <p>骨科医院</p>
+                    </div>
+                    <ul class="yj-map-right">
+                        <li><a href="#" target="_blank">肩肘外科</a></li>
+                        <li><a href="#" target="_blank">骨肿瘤科</a></li>
+                        <li><a href="#" target="_blank">运动医学科</a></li>
+                        <li><a href="#" target="_blank">儿童骨科</a></li>
+                        <li><a href="#" target="_blank">关节外科</a></li>
+                        <li><a href="#" target="_blank">创伤骨科</a></li>
+                        <li><a href="#" target="_blank">脊柱外科</a></li>
+                    </ul>
+                </div>
+
+                <div class="yj-map-box">
+                    <div class="yj-map-left">
+                        <p>骨科医院</p>
+                    </div>
+                    <ul class="yj-map-right">
+                        <li><a href="#" target="_blank">肩肘外科</a></li>
+                        <li><a href="#" target="_blank">骨肿瘤科</a></li>
+                        <li><a href="#" target="_blank">运动医学科</a></li>
+                        <li><a href="#" target="_blank">儿童骨科</a></li>
+                        <li><a href="#" target="_blank">关节外科</a></li>
+                        <li><a href="#" target="_blank">创伤骨科</a></li>
+                        <li><a href="#" target="_blank">脊柱外科</a></li>
+                    </ul>
+                </div>
+
+                <div class="yj-map-box">
+                    <div class="yj-map-left">
+                        <p>骨科医院</p>
+                    </div>
+                    <ul class="yj-map-right">
+                        <li><a href="#" target="_blank">肩肘外科</a></li>
+                        <li><a href="#" target="_blank">骨肿瘤科</a></li>
+                        <li><a href="#" target="_blank">运动医学科</a></li>
+                        <li><a href="#" target="_blank">儿童骨科</a></li>
+                        <li><a href="#" target="_blank">关节外科</a></li>
+                        <li><a href="#" target="_blank">创伤骨科</a></li>
+                        <li><a href="#" target="_blank">脊柱外科</a></li>
+                    </ul>
+                </div>
+
+                <div class="yj-map-box">
+                    <div class="yj-map-left">
+                        <p>骨科医院</p>
+                    </div>
+                    <ul class="yj-map-right">
+                        <li><a href="#" target="_blank">肩肘外科</a></li>
+                        <li><a href="#" target="_blank">骨肿瘤科</a></li>
+                        <li><a href="#" target="_blank">运动医学科</a></li>
+                        <li><a href="#" target="_blank">儿童骨科</a></li>
+                        <li><a href="#" target="_blank">关节外科</a></li>
+                        <li><a href="#" target="_blank">创伤骨科</a></li>
+                        <li><a href="#" target="_blank">脊柱外科</a></li>
+                        <li><a href="#" target="_blank">肩肘外科</a></li>
+                        <li><a href="#" target="_blank">骨肿瘤科</a></li>
+                        <li><a href="#" target="_blank">运动医学科</a></li>
+                        <li><a href="#" target="_blank">儿童骨科</a></li>
+                        <li><a href="#" target="_blank">关节外科</a></li>
+                        <li><a href="#" target="_blank">创伤骨科</a></li>
+                        <li><a href="#" target="_blank">脊柱外科</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="yj-map-box">
+                    <div class="yj-map-left">
+                        <p>骨科医院</p>
+                    </div>
+                    <ul class="yj-map-right">
+                        <li><a href="#" target="_blank">肩肘外科</a></li>
+                        <li><a href="#" target="_blank">骨肿瘤科</a></li>
+                        <li><a href="#" target="_blank">运动医学科</a></li>
+                        <li><a href="#" target="_blank">儿童骨科</a></li>
+                        <li><a href="#" target="_blank">关节外科</a></li>
+                        <li><a href="#" target="_blank">创伤骨科</a></li>
+                        <li><a href="#" target="_blank">脊柱外科</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+        <div class="g-w30 g-mw f-fr">
+            <div class="yj-img">
+                <div class="yj-img-box">
+                    <a href="#" target="_blank"><img src="img/2.jpg" alt=""/></a>
+                </div>
+                <div class="yj-img-box">
+                    <a href="#" target="_blank"><img src="img/3.jpg" alt=""/></a>
+                </div>
+                <div class="yj-img-box">
+                    <a href="#" target="_blank"><img src="img/4.jpg" alt=""/></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="w-main f-bc f-cb">
+    <ul class="yj-links">
+        <li class="yj-links-name">友情链接:</li>
+        <li><a href="#" target="_blank">南方医科大学</a></li>
+        <li><a href="#" target="_blank">珠江医院</a></li>
+        <li><a href="#" target="_blank">南方医院</a></li>
+        <li><a href="#" target="_blank">南方医科大学第五附属医院</a></li>
+        <li><a href="#" target="_blank">南方医科大学中西医结合医院</a></li>
+        <li><a href="#" target="_blank">39健康网</a></li>
+        <li><a href="#" target="_blank">好大夫在线</a></li>
+        <li><a href="#" target="_blank">广东省人民医院</a></li>
+        <li><a href="#" target="_blank">广东省中心医院</a></li>
+    </ul>
+</div>
+
+
+<div class="footer">
+    <div class="w-main f-bc f-cb">
+        <ul class="footer-links">
+            <li class="footer-links-bd"><a href="#" target="_blank">专家风采</a></li>
+            <li class="footer-links-bd"><a href="#" target="_blank">就医指南</a></li>
+            <li class="footer-links-bd"><a href="#" target="_blank">科室介绍</a></li>
+            <li class="footer-links-bd"><a href="#" target="_blank">体检中心</a></li>
+            <li class="footer-links-bd"><a href="#" target="_blank">交通指引</a></li>
+            <li class="footer-links-bd"><a href="#" target="_blank">联系我们</a></li>
+            <li><a href="#">人才招聘</a></li>
+        </ul>
+        <div class="yj-address">
+            <p>广州市天河区中山大道西183号 咨询电话：020-62784188 备案号：粤ICP10207299号</p>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>
