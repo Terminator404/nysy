@@ -80,6 +80,33 @@
     </style>
 </head>
 <body>
+<button class="btn f-btn pc-hide icon-menu">&#xe60b;</button>
+<div class="mj-mcmenu pc-hide">
+    <button class="mj-mcmenu-close">X</button>
+    <div class="mj-mcmenu-box">
+        <div class="mj-mcmenu-body">
+            <ul class="mj-mcmenu-ul">
+                <li><a href="#">医院首页</a></li>
+                <li><a href="#">医院概况</a></li>
+                <li><a href="#">新闻公告</a></li>
+                <li><a href="#">医疗服务</a></li>
+                <li><a href="#">学科人才</a></li>
+                <li><a href="#">护理园地</a></li>
+                <li><a href="#">党群人事</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $('.btn').add('.mj-mcmenu-close').click(function(){
+        $('.mj-mcmenu').toggleClass('on');
+    });
+    $('.mj-mcmenu-bd .mj-mcmenu-title').click(function(){
+        $(this).next().toggle('fast')
+    });
+</script>
+
+
 <header>
     <div class="yj-top mc-hide">
         <div class="w-main f-bc f-cb ">
@@ -103,7 +130,7 @@
             <div class="yj-logo">
                 <a href="#"><img src="img/logo.jpg" alt=""/></a>
             </div>
-            <div class="yj-search">
+            <div id="pc-search" class="yj-search mc-hide">
                 <div class="yj-search-box">
                     <input type="text"/>
                     <button class="f-btn">搜索</button>
@@ -184,8 +211,7 @@
     </script>
 </div>
 
-<ul class="yj-guide">
-    <div class="w-main f-bc f-cb">
+<ul class="yj-guide w-main f-bc f-cb">
         <a href="#" target="_blank">
             <li class="yj-guide-box cbl g-mw33">
                 <i class="yj-guide-icon">&#xe606;</i>
@@ -227,11 +253,27 @@
                 <p>医保服务</p>
             </li>
         </a>
-    </div>
 </ul>
+
+
 
 <div class="yj-container">
     <div class="w-main f-bc f-cb">
+
+        <div id="mc-search" class="yj-search pc-hide">
+            <div class="yj-search-box">
+                <input type="text"/>
+                <button class="f-btn">搜索</button>
+            </div>
+            <div class="yj-search-hot">
+                <p class="f-f14">热门搜索：</p>
+                <a href="#" class="f-f14">肿瘤</a>
+                <a href="#" class="f-f14">中风</a>
+                <a href="#" class="f-f14">肝炎</a>
+                <a href="#" class="f-f14">疼痛</a>
+                <a href="#" class="f-f14">出血</a>
+            </div>
+        </div>
 
         <div class="g-w70 g-mw f-fl">
             <div class="yj-container-left">

@@ -1,7 +1,7 @@
 /*Create by Chen Yongjie*/
 /*E-mail:291557041@qq.com*/
 
-@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_1462413065_377359.eot);src:url(//at.alicdn.com/t/font_1462413065_377359.eot?#iefix) format('embedded-opentype'),url(//at.alicdn.com/t/font_1462413065_377359.woff) format('woff'),url(//at.alicdn.com/t/font_1462413065_377359.ttf) format('truetype'),url(//at.alicdn.com/t/font_1462413065_377359.svg#iconfont) format('svg')}
+@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_1462418104_8234837.eot);src:url(//at.alicdn.com/t/font_1462418104_8234837.eot?#iefix) format('embedded-opentype'),url(//at.alicdn.com/t/font_1462418104_8234837.woff) format('woff'),url(//at.alicdn.com/t/font_1462418104_8234837.ttf) format('truetype'),url(//at.alicdn.com/t/font_1462418104_8234837.svg#iconfont) format('svg')}
 
 body{font-family: "微软雅黑"}
 a:focus { outline:none;  -moz-outline:none;}
@@ -17,7 +17,6 @@ a:focus { outline:none;  -moz-outline:none;}
 .yj-top-bdr{border-right: 1px solid #cacaca;}
 
 /*logo及搜索框*/
-.yj-middle{height: 130px}
 .yj-logo{margin-top: 10px;display: inline-block}
 .MC .yj-logo img{width: 100%}
 .yj-search{display:inline-block;position:absolute;right: 0px;margin-top: 40px;margin-right: 10px; font-size: 0;  -webkit-text-size-adjust:none;}
@@ -29,7 +28,13 @@ a:focus { outline:none;  -moz-outline:none;}
 .yj-search-hot p{color:#0aa6bd;display: inline-block }
 .yj-search-hot a{ text-decoration: none;color: #999;margin: 0 2px}
 .yj-search-hot a:hover{color: #337ab7}
-.MC .yj-search{margin: 0;left: 2%;right: auto}
+.MC .yj-search{position: relative;margin-top: 0px; margin-left: 20px;}
+.MC .yj-search-hot{}
+.MC .yj-search input{width: 80%}
+.MC .yj-search button{width: 20%;}
+.MC .yj-search{margin-bottom: 10px}
+.MC .yj-logo{width: 80%}
+
 
 /*导航栏*/
 .yj-nav{min-width:1200px;height: 40px;background-color:#0aa6bd;}
@@ -69,8 +74,9 @@ a:focus { outline:none;  -moz-outline:none;}
 .yj-guide-icon{font-family:"iconfont"; font-size:36px;font-style:normal;color: #fff;line-height: 80px}
 .yj-guide-box p{color: #fff;font-size: 16px;line-height: 10px}
 .MC .yj-guide-box{margin: 0px;}
+.MC .yj-guide{ padding-bottom: 10px;}
 
-/*轮播小图*/
+    /*轮播小图*/
 .yj-container{}
 .mj-slideBox,.mj-slideBox-img{ width:100%; height:230px;}
 .mj-slideBox .hd ul li{ background:#fff;}
@@ -86,7 +92,7 @@ a:focus { outline:none;  -moz-outline:none;}
 .mj-slideBox .bd li{ zoom:1; vertical-align:middle; }
 
 /*首页新闻列表栏*/
-.yj-container-box{margin:0px 10px}
+.yj-container-box{margin:0px 10px;}
 .yj-container-before-title{display:inline-block; border-left:6px solid #0aa6bd;padding: 0 5px}
 .yj-container-title{background-color: #0aa6bd;color: #fff;font-size: 14px;border: 2px solid #0aa6bd;  border-left:10px solid #0aa6bd;border-right: 10px solid #0aa6bd}
 .more{  text-decoration: none;  font-size: 12px; color: #999;line-height: 26px}
@@ -96,6 +102,7 @@ a:focus { outline:none;  -moz-outline:none;}
 .yj-container-txt a{ text-decoration: none;color: #666;font-size: 14px}
 .yj-container-txt a:hover{text-decoration: underline}
 .MC .yj-container-right{margin-top: 10px}
+
 
 /*科室导航*/
 .yj-container-box2{margin-top: 20px}
@@ -179,6 +186,22 @@ a:focus { outline:none;  -moz-outline:none;}
 .mj-classList-list-p{font-size:12px;margin:0;color:#999}
 .mj-classList-list-span{display:inline-block;margin-right:10px}
 .mj-classList-list-span .f-icon{color:#1b9adc;margin-right:5px}
+
+/*移动端菜单*/
+.icon-menu{font-family:"iconfont"; font-size:26px;font-style:normal; display: inline-block;color: #0aa6bd;position:absolute;top:10px;right:10px;background: 0 0;border: none;z-index: 2}
+.mj-mcmenu{background-color:rgba(0,0,0,.6);position:fixed;width:100%;height:100%;z-index:99;left:100%;top:0;opacity:0;transition:opacity .3s linear}
+.mj-mcmenu.on{left:0;opacity:1}
+.mj-mcmenu-close{border:none;background:0 0;color:#fff;font-size:24px;font-family:arial;cursor:pointer;position:absolute;top:50%;left:15%;margin-top:-12px}
+.mj-mcmenu-box{white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;transition:all .2s linear;overflow-x:hidden;background-color:#fff;width:0;position:absolute;top:0;right:0;height:100%;overflow-y:auto}
+.mj-mcmenu-bd .mj-mcmenu-ul{display:none}
+.mj-mcmenu.on .mj-mcmenu-box{width:60%}
+.mj-mcmenu-body{padding:10px}
+a.mj-mcmenu-title{display:block;text-decoration:none}
+.mj-mcmenu-title{border-bottom:2px solid #ddd;line-height:40px;font-weight:700;font-size:16px;color:#666}
+.mj-mcmenu-ul{padding:0;margin:0}
+.mj-mcmenu-ul a{padding-left:8px;display:block;line-height:40px;text-decoration:none;font-size:14px;color:#666;border-bottom:1px dotted #ccc}
+.mj-mcmenu-ul a:hover{background-color:#f1f1f1}
+
 
 
 
