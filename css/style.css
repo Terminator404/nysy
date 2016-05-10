@@ -19,7 +19,7 @@ a:focus { outline:none;  -moz-outline:none;}
 .yj-top-bdr{border-right: 1px solid #cacaca;}
 
 /*logo及搜索框*/
-.yj-logo{margin-top: 10px;display: inline-block}
+.yj-logo{margin-top: 5px;display: inline-block}
 .MC .yj-logo img{width: 100%}
 .yj-search{display:inline-block;position:absolute;right: 0px;margin-top: 40px;margin-right: 10px; font-size: 0;  -webkit-text-size-adjust:none;}
 .yj-search input{  width: 200px;  height: 30px;border-radius: 0px;background-color:#eeeeee;border: none;outline: none; }
@@ -40,9 +40,13 @@ a:focus { outline:none;  -moz-outline:none;}
 
 /*导航栏*/
 .yj-nav{min-width:1200px;height: 40px;background-color:#0aa6bd;}
-.yj-nav-box li{display: inline-block;height: 40px;width: 150px;text-align: center;}
-.yj-nav-box li:hover{background-color: #f29b10;}
-.yj-nav-box a{text-decoration: none;color: #fff;line-height: 40px}
+.yj-nav-a{display: block;float: left;position: relative;width: 140px;text-align: center;font-size: 14px;color:#666;text-decoration:none;cursor: default;color: #fff}
+.yj-nav-a b{font-size:16px;display:block;font-weight:400;line-height: 40px}
+.yj-nav-a.on,.yj-nav-a:hover{color: #fff;background-color: #f29b10;height:40px}
+.yj-nav-child{display:none;position:absolute;z-index:10;left:-11px;top:40px;width:140px;background-color:#fff;border:1px solid #eee;padding:10px}
+.yj-nav-child ul{margin: 0;padding: 0;list-style: none;text-align: left}
+.yj-nav-child ul a{text-decoration:none;text-align: center;display: block;line-height: 30px;border-bottom:1px dotted #ddd;color: #666 }
+.yj-nav-child ul a:hover{background-color:#f1f1f1}
 
 
 /*首页轮播大图*/
